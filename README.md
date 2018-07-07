@@ -21,7 +21,7 @@ The following **required** functionality is completed:
 
 The following **optional** features are implemented:
 
-- [ ] Tweet Details Page: User can tap on a tweet to view it, with controls to retweet, favorite, and reply.
+- [X] Tweet Details Page: User can tap on a tweet to view it, with controls to retweet, favorite, and reply.
 - [ ] User can view their profile in a *profile tab*
    - Contains the user header view: picture and tagline
    - Contains a section with the users basic stats: # tweets, # following, # followers
@@ -37,7 +37,7 @@ The following **optional** features are implemented:
 - [x] After creating a new tweet, a user should be able to view it in the timeline immediately without refetching the timeline from the network.
 - [ ] User can reply to any tweet, and replies should be prefixed with the username and the reply_id should be set when posting the tweet (**2 points**)
 - [ ] User sees embedded images in tweet if available 
-- [ ] User can switch between timeline, mentions, or profile view through a tab bar (**3 points**)
+- [X] User can switch between timeline, mentions, or profile view through a tab bar (**3 points**)
 - [ ] Profile Page: pulling down the profile page should blur and resize the header image. (**4 points**)
 
 
@@ -47,24 +47,27 @@ The following **additional** features are implemented:
 
 Please list two areas of the assignment you'd like to **discuss further with your peers** during the next class (examples include better ways to implement something, how to extend your app in certain ways, etc):
 
-1.
-2.
+1. Creating a better understanding of network request
+2. Learning about creating a login/logout page (just curious)
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+https://imgur.com/eae1ff00-b45c-488c-bedc-7b8db554cfaf
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+AUTOLAYOUT!! It seems like a fairly easy concept but it is a pain to create and implement. Other than that the other challenge was working with network request and segues.
 
 ## Credits
 
 List an 3rd party libraries, icons, graphics, or other assets you used in your app.
+DateTools Pod
+Twitter API
+
 
 - [AFNetworking](https://github.com/AFNetworking/AFNetworking) - networking task library
 
