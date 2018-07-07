@@ -16,6 +16,11 @@
 
 - (void)getHomeTimelineWithCompletion:(void(^)(NSArray *tweets, NSError *error))completion;
 - (void)postStatusWithText:(NSString *)text completion:(void (^)(Tweet *, NSError *))completion;
+- (void)retweetCreate:(Tweet *)tweet completion:(void (^)(Tweet *, NSError *))completion;
+- (void)favoriteCreate:(Tweet *)tweet completion:(void (^)(Tweet *, NSError *))completion;
+- (void)retweetDestroy:(Tweet *)tweet completion:(void (^)(Tweet *, NSError *))completion;
+- (void)favoriteDestroy:(Tweet *)tweet completion:(void (^)(Tweet *, NSError *))completion;
+- (void)postReply:(Tweet *)tweet withText:(NSString *)text completion:(void (^)(Tweet *, NSError *))completion;
 
 
 @end

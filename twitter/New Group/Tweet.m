@@ -8,6 +8,7 @@
 
 #import "Tweet.h"
 #import "User.h"
+#import "DateTools.h"
 
 @implementation Tweet
 
@@ -46,10 +47,14 @@
         // Configure output format
         formatter.dateStyle = NSDateFormatterShortStyle;
         formatter.timeStyle = NSDateFormatterNoStyle;
+        
+        NSString *timeAgoDate = [NSDate shortTimeAgoSinceDate:date];
+        //NSLog(@"Time Ago: %@", timeAgoDate);
+        //NSLog(@"Time Ago: %@", timeAgoDate.shortTimeAgoSinceNow);
         // Convert Date to String
-        self.createdAtString = [formatter stringFromDate:date];
+        self.createdAtString = timeAgoDate;
     }
-    //NSLog(@"Tweet.m succesful as tweet acquired");
+    //NSLog(@"Tweet.m succesful as tweet acquired");kgfuctttrfbtekkehuljibunjjigdfbh
     return self;
 }
 

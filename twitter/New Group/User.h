@@ -15,7 +15,7 @@
 // TODO: Add properties
 @property (strong, nonatomic) NSString *name;
 @property (strong, nonatomic) NSString *screenName;
-@property (strong, nonatomic) UIImageView *profileImage;
+@property (strong, nonatomic) NSURL *profileImage;
 
 // TODO: Create initializer
 - (instancetype)initWithDictionary:(NSDictionary *)dictionary;

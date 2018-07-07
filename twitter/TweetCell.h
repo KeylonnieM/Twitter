@@ -19,9 +19,9 @@
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *retweetCountLabel;
 @property (weak, nonatomic) IBOutlet UILabel *favoriteCountLabel;
+@property (weak, nonatomic) IBOutlet UIButton *retweetButton;
+@property (weak, nonatomic) IBOutlet UIButton *favoriteButton;
 
-
-//DONT FORGET TO ADD ICON-RETWEET AND ICON-FAVORITE
 
 
 @end

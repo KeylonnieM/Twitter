@@ -8,7 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TimelineViewController : UIViewController
+@interface TimelineViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, UIScrollViewDelegate>
 
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (assign, nonatomic) BOOL isMoreDataLoading;
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 
 @end
+
